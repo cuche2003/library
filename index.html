@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="script/book.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <main>
+        <div id="lib-ctn"></div>
+        <button id="add-btn" class="centered">Add book</button>
+        </main>
+        <form id="add-form" class="form" onsubmit="return false">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" class="addInput" maxlength="30" placeholder="Title" required="required"><br>
+            <label for="author">Author:</label><br>
+            <input type="text" id="author" name="author" class="addInput" maxlength="30" placeholder="Author" required="required"><br>
+            <label for="pages">Pages:</label><br>
+            <input type="number" id="pages" name="pages" class="addInput" min="1" placeholder="Pages" required="required"><br>
+            <label for="read">Have you read it?</label>
+            <input type="checkbox" id="read" name="read" class="addInput" checked="true" value="read"><br>
+            <button type="submit" id="confirm-btn" class="centered">Confirm</button>
+        </form> 
+    </body>
+</html>
