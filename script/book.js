@@ -156,8 +156,6 @@ function updateLibrary() {
 
 const theHobbit = new Book('The Hobbit', 'J.R.R. Tolkien', 295, false);
 addBookToLibrary(theHobbit);
-//const touhou = new Book('Touhou Project', 'ZUN', 999, true);
-//addBookToLibrary(touhou);
 
 if(localStorage.length === 0) {
     populateStorage();
